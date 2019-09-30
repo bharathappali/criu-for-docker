@@ -2,7 +2,7 @@
 
 create_dump_folder() {
     mkdir -p /home/criu-dump-location
-    touch /home/criu-dump-location/dump.log
+    touch /home/criu-dump-location/dump.log /home/criu-dump-location/restore.log
 }
 run_app() {
     java -jar /app.jar &
